@@ -73,6 +73,15 @@
     	<section>
     	  <h1>hello world</h1>
     	</section>
+    	<section>
+    		<div class="spacer s2"></div>
+    		<div id="trigger1" class="spacer s0"></div>
+    		<div id="animate1" class="box2 skin">
+    			<p>Wuold you shdflhsdf</p>
+    		</div>
+    		<div class="spacer s2"></div>
+    		
+    	</section>
     	</main>
     	<!-- Footer -->
     	  <footer>
@@ -83,6 +92,7 @@
     	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     	<script type="text/javascript" src="/bower_components/what-input/dist/what-input.min.js"></script>
     	<script type="text/javascript" src="/bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+    	<script type="text/javascript" src="/bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js"></script>
     	<script type="text/javascript" src="js/dist/app.js"></script>
     	<!-- .Common Scripts -->
     	<!-- critical script -->
