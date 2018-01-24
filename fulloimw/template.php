@@ -51,7 +51,40 @@
     <meta itemprop="name" content="Fulloil MW">
     <meta itemprop="description" content="Fulloim mw Aquí encontrará la solución a todas las necesidades que su vehículo presente con respecto a la vida de su motor.">
     <meta itemprop="image" content="">
+    <!-- style. -->
+    <link rel="stylesheet" type="text/css" href="css/app.min.css">
+    <!-- fonts google. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
   </head>
-    <main>
-    <h1>hello world</h1>
-    </main>
+    <body>
+    	<!-- Header -->
+    	  <nav>
+    	  	<p><a data-toggle="menuBar">Expand!</a></p>
+    	  	<ul class="menu" id="menuBar" data-toggler=".expanded">
+    	  	  <li><a href="#">One</a></li>
+    	  	  <li><a href="#">Two</a></li>
+    	  	  <li><a href="#">Three</a></li>
+    	  	  <li><a href="#">Four</a></li>
+    	  	</ul>
+    	  </nav>
+    	<!-- .Header -->
+    	<main>
+    	<section>
+    	  <h1>hello world</h1>
+    	</section>
+    	</main>
+    	<!-- Footer -->
+    	  <footer>
+    	  	<nav></nav>
+    	  </footer>
+    	<!-- .Footer -->
+    	<!-- Common Scripts -->
+    	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    	<script type="text/javascript" src="/bower_components/what-input/dist/what-input.min.js"></script>
+    	<script type="text/javascript" src="/bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+    	<script type="text/javascript" src="js/dist/app.js"></script>
+    	<!-- .Common Scripts -->
+    	<!-- critical script -->
+    	<!-- .critical script -->
+    </body>

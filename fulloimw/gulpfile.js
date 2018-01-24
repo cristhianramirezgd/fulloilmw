@@ -8,6 +8,8 @@ autoprefixer = require('gulp-autoprefixer'),
 gp_sourcemaps = require('gulp-sourcemaps'),
 sass = require('gulp-sass'),
 watch = require('gulp-watch');
+const babel = require('gulp-babel');
+const imagemin = require('gulp-imagemin');
 
 var sassPaths = [
   'bower_components/normalize.scss/sass',
@@ -32,6 +34,24 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
+// Compile Babel
+gulp.task('babel-js', () =>
+    gulp.src('js/app.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest('js/dist'))
+);
+
+// Compress Images
+gulp.task('image-optimization', () =>
+  gulp.src('assets/*.*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('assets/dist/'))
+);
+
 gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
+    gulp.watch(['scss/**/*.scss'], ['sass']);
+    gulp.watch(['js/**/*.js'], ['babel-js']);
+    gulp.watch(['assets/*'], ['image-optimization']);
 });
