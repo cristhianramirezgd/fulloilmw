@@ -4,3 +4,4 @@ node_modules
 npm-debug.log
 css
 template.php
+js/dist/app.js
